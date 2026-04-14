@@ -1,17 +1,16 @@
-
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: 'Segoe UI', sans-serif; background: #0a0a0a; color: #fff; }
 
   /* HEADER */
   .header {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    background: #1e469a; /* Azul da Logo */
     padding: 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 2px solid #e63946;
-    box-shadow: 0 2px 20px rgba(230,57,70,0.3);
+    border-bottom: 2px solid #eab02e; /* Amarelo da Logo */
+    box-shadow: 0 2px 20px rgba(234, 176, 46, 0.3);
   }
   .header-inner {
     max-width: 1100px;
@@ -39,7 +38,7 @@
   }
   .logo-text span {
     font-size: 11px;
-    color: #e63946;
+    color: #eab02e; /* Amarelo da Logo */
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 500;
@@ -57,11 +56,11 @@
     transition: color 0.2s;
     letter-spacing: 0.5px;
   }
-  .nav-links a:hover { color: #e63946; }
+  .nav-links a:hover { color: #eab02e; }
 
   /* HERO */
   .hero {
-    background: linear-gradient(135deg, #0f3460 0%, #16213e 40%, #1a1a2e 70%, #0d0d0d 100%);
+    background: linear-gradient(135deg, #1e469a 0%, #16367a 40%, #0a214d 100%); /* Fundo Azul */
     padding: 70px 20px 60px;
     text-align: center;
     position: relative;
@@ -74,14 +73,14 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle at 30% 50%, rgba(230,57,70,0.08) 0%, transparent 60%);
+    background: radial-gradient(circle at 30% 50%, rgba(234, 176, 46, 0.08) 0%, transparent 60%);
     pointer-events: none;
   }
   .hero-badge {
     display: inline-block;
-    background: rgba(230,57,70,0.15);
-    border: 1px solid rgba(230,57,70,0.4);
-    color: #e63946;
+    background: rgba(234, 176, 46, 0.15);
+    border: 1px solid rgba(234, 176, 46, 0.4);
+    color: #eab02e;
     font-size: 11px;
     padding: 5px 14px;
     border-radius: 20px;
@@ -100,7 +99,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .hero h2 span { color: #e63946; }
+  .hero h2 span { color: #eab02e; }
   .hero p {
     font-size: 16px;
     color: #aab;
@@ -115,13 +114,13 @@
     flex-wrap: wrap;
   }
   .btn-primary {
-    background: #e63946;
-    color: #fff;
+    background: #eab02e; /* Amarelo */
+    color: #1e469a; /* Texto Azul para contraste */
     padding: 13px 28px;
     border-radius: 8px;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     transition: background 0.2s, transform 0.1s;
     display: flex;
     align-items: center;
@@ -129,7 +128,7 @@
     border: none;
     cursor: pointer;
   }
-  .btn-primary:hover { background: #c1121f; transform: translateY(-1px); }
+  .btn-primary:hover { background: #d49a1d; transform: translateY(-1px); }
   .btn-secondary {
     background: transparent;
     color: #fff;
@@ -144,11 +143,11 @@
     align-items: center;
     gap: 8px;
   }
-  .btn-secondary:hover { border-color: #e63946; background: rgba(230,57,70,0.08); }
+  .btn-secondary:hover { border-color: #eab02e; background: rgba(234, 176, 46, 0.08); }
 
   /* STATS BAR */
   .stats-bar {
-    background: #e63946;
+    background: #eab02e;
     padding: 18px 20px;
   }
   .stats-inner {
@@ -161,7 +160,7 @@
   }
   .stat {
     text-align: center;
-    color: #fff;
+    color: #1e469a;
   }
   .stat strong {
     display: block;
@@ -172,6 +171,7 @@
     font-size: 11px;
     opacity: 0.88;
     letter-spacing: 0.5px;
+    font-weight: 600;
   }
 
   /* SECTION */
@@ -186,7 +186,7 @@
     color: #fff;
     margin-bottom: 8px;
   }
-  .section-title span { color: #e63946; }
+  .section-title span { color: #eab02e; }
   .section-sub {
     font-size: 14px;
     color: #888;
@@ -201,7 +201,7 @@
     gap: 16px;
   }
   .cat-card {
-    background: #1a1a2e;
+    background: #0a1b3d; /* Fundo Azul Escuro */
     border: 1px solid rgba(255,255,255,0.07);
     border-radius: 12px;
     padding: 24px 16px;
@@ -211,7 +211,7 @@
     text-decoration: none;
   }
   .cat-card:hover {
-    border-color: #e63946;
+    border-color: #eab02e;
     transform: translateY(-2px);
   }
   .cat-icon {
@@ -233,7 +233,7 @@
     gap: 20px;
   }
   .diff-card {
-    background: #111;
+    background: #0a1b3d;
     border: 1px solid rgba(255,255,255,0.07);
     border-radius: 12px;
     padding: 26px 22px;
@@ -244,7 +244,7 @@
   .diff-icon {
     width: 44px;
     height: 44px;
-    background: rgba(230,57,70,0.12);
+    background: rgba(234, 176, 46, 0.12);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -284,7 +284,7 @@
   .loja-ml { background: linear-gradient(135deg, #ffe600, #f5c400); }
   .loja-ml .loja-name, .loja-ml .loja-desc { color: #333; }
   .loja-whatsapp { background: linear-gradient(135deg, #25d366, #128c7e); }
-  .loja-site { background: linear-gradient(135deg, #0f3460, #16213e); border: 1px solid rgba(230,57,70,0.4); }
+  .loja-site { background: #1e469a; border: 1px solid rgba(234,176,46,0.4); }
   .loja-logo {
     width: 52px;
     height: 52px;
@@ -307,7 +307,7 @@
 
   /* CONTATO */
   .contato-section {
-    background: #111;
+    background: #0a1128;
     padding: 60px 20px;
   }
   .contato-inner {
@@ -333,7 +333,7 @@
   .info-icon {
     width: 38px;
     height: 38px;
-    background: rgba(230,57,70,0.12);
+    background: rgba(234, 176, 46, 0.12);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -344,7 +344,7 @@
   .info-text strong {
     display: block;
     font-size: 13px;
-    color: #e63946;
+    color: #eab02e;
     font-weight: 600;
     margin-bottom: 2px;
   }
@@ -392,7 +392,7 @@
     overflow: hidden;
     border: 1px solid rgba(255,255,255,0.08);
     height: 260px;
-    background: #1a1a2e;
+    background: #0a1b3d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -406,7 +406,7 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    color: #e63946;
+    color: #eab02e;
     font-size: 13px;
     text-decoration: none;
     margin-top: 8px;
@@ -416,7 +416,7 @@
 
   /* HORÁRIO */
   .horario-list {
-    background: #1a1a2e;
+    background: #0a1b3d;
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid rgba(255,255,255,0.06);
@@ -431,8 +431,8 @@
   .hor-row:last-child { border-bottom: none; }
   .hor-row span:first-child { color: #aaa; }
   .hor-row span:last-child { color: #fff; font-weight: 500; }
-  .hor-row.today { background: rgba(230,57,70,0.08); }
-  .hor-row.today span:first-child { color: #e63946; font-weight: 600; }
+  .hor-row.today { background: rgba(234, 176, 46, 0.08); }
+  .hor-row.today span:first-child { color: #eab02e; font-weight: 600; }
   .badge-open {
     background: #25d366;
     color: #fff;
@@ -446,10 +446,10 @@
 
   /* AVALIACOES */
   .aval-bar {
-    background: #0d0d0d;
+    background: #060606;
     padding: 60px 20px;
   }
-  .stars { color: #ffd700; font-size: 18px; letter-spacing: 2px; }
+  .stars { color: #eab02e; font-size: 18px; letter-spacing: 2px; }
   .rating-box {
     display: flex;
     align-items: center;
@@ -475,7 +475,7 @@
     gap: 16px;
   }
   .review-card {
-    background: #111;
+    background: #0a1b3d;
     border: 1px solid rgba(255,255,255,0.06);
     border-radius: 10px;
     padding: 18px;
@@ -490,25 +490,25 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: #e63946;
+    background: #eab02e;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 13px;
     font-weight: 700;
-    color: #fff;
+    color: #1e469a;
     flex-shrink: 0;
   }
   .reviewer strong { display: block; font-size: 13px; color: #ddd; }
   .reviewer span { font-size: 11px; color: #666; }
-  .review-stars { font-size: 13px; color: #ffd700; margin-bottom: 6px; }
+  .review-stars { font-size: 13px; color: #eab02e; margin-bottom: 6px; }
   .review-text { font-size: 13px; color: #999; line-height: 1.6; }
 
   /* FOOTER */
   .footer {
-    background: #060606;
+    background: #050b1a;
     padding: 40px 20px 18px;
-    border-top: 1px solid rgba(255,255,255,0.06);
+    border-top: 1px solid #eab02e;
   }
   .footer-inner {
     max-width: 1100px;
@@ -523,19 +523,19 @@
   .footer-col h4 {
     font-size: 13px;
     font-weight: 600;
-    color: #e63946;
+    color: #eab02e;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 14px;
   }
   .footer-col p, .footer-col a {
     font-size: 12px;
-    color: #666;
+    color: #888;
     line-height: 1.9;
     display: block;
     text-decoration: none;
   }
-  .footer-col a:hover { color: #e63946; }
+  .footer-col a:hover { color: #eab02e; }
   .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.05);
     padding-top: 14px;
@@ -547,17 +547,17 @@
   }
   .footer-bottom p {
     font-size: 11px;
-    color: #444;
+    color: #666;
   }
   .footer-credit {
     font-size: 10px;
-    color: #333;
+    color: #555;
   }
   .footer-credit a {
-    color: #555;
+    color: #777;
     text-decoration: none;
   }
-  .footer-credit a:hover { color: #e63946; }
+  .footer-credit a:hover { color: #eab02e; }
 
   /* FLOATING WPP */
   .float-wpp {
@@ -586,25 +586,19 @@
   }
 </style>
 
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/5511966116078" target="_blank" class="float-wpp" title="Fale conosco no WhatsApp">
+<a href="https://wa.me/5511953218788" target="_blank" class="float-wpp" title="Fale conosco no WhatsApp">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
-<!-- HEADER -->
 <div style="background:#0a0a0a;">
 <header class="header">
   <div class="header-inner">
     <div class="logo-area">
-      <!-- Logo SVG Labcar -->
       <svg class="logo-svg" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
-        <rect width="56" height="56" rx="10" fill="#e63946"/>
+        <rect width="56" height="56" rx="28" fill="#1e469a"/>
         <text x="28" y="22" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="700" fill="white" letter-spacing="1">LAB</text>
-        <text x="28" y="36" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="700" fill="white" letter-spacing="1">CAR</text>
-        <rect x="10" y="39" width="36" height="2.5" rx="1" fill="rgba(255,255,255,0.5)"/>
-        <path d="M8 46 L48 46" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-        <circle cx="18" cy="48" r="2.5" fill="white"/>
-        <circle cx="38" cy="48" r="2.5" fill="white"/>
+        <text x="28" y="36" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="700" fill="#eab02e" letter-spacing="1">CAR</text>
+        <path d="M10 42 L46 42" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 2"/>
       </svg>
       <div class="logo-text">
         <h1>LABCAR</h1>
@@ -619,14 +613,13 @@
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <a href="https://wa.me/5511966116078" target="_blank" class="btn-primary" style="font-size:13px;padding:10px 18px;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <a href="https://wa.me/5511953218788" target="_blank" class="btn-primary" style="font-size:13px;padding:10px 18px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#1e469a"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       Fale Agora
     </a>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-badge">Ponto Shopee Xpress ✓ Agência Oficial</div>
   <h2>Tudo que seu <span>carro precisa</span> em um só lugar</h2>
@@ -641,7 +634,6 @@
   </div>
 </section>
 
-<!-- STATS -->
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat"><strong>4.400+</strong><span>Avaliações Google</span></div>
@@ -651,7 +643,6 @@
   </div>
 </div>
 
-<!-- CATEGORIAS -->
 <section class="section" id="categorias">
   <h2 class="section-title">Nossas <span>Categorias</span></h2>
   <p class="section-sub">Peças, acessórios e muito mais para o seu veículo</p>
@@ -683,8 +674,7 @@
   </div>
 </section>
 
-<!-- DIFERENCIAIS -->
-<div style="background:#0d0d0d;padding:60px 20px;">
+<div style="background:#050b1a;padding:60px 20px;">
   <div style="max-width:1100px;margin:0 auto;">
     <h2 class="section-title">Por que escolher a <span>Labcar?</span></h2>
     <p class="section-sub">Qualidade, confiança e atendimento diferenciado</p>
@@ -713,7 +703,6 @@
   </div>
 </div>
 
-<!-- LOJAS -->
 <section class="section" id="lojas">
   <h2 class="section-title">Encontre a <span>Labcar</span> nas plataformas</h2>
   <p class="section-sub">Compre com segurança nos maiores marketplaces do Brasil</p>
@@ -728,10 +717,10 @@
       <div class="loja-name">Mercado Livre</div>
       <div class="loja-desc">Loja oficial – LABCAR AUTO</div>
     </a>
-    <a href="https://wa.me/5511966116078" target="_blank" class="loja-card loja-whatsapp">
+    <a href="https://wa.me/5511953218788" target="_blank" class="loja-card loja-whatsapp">
       <div class="loja-logo">💬</div>
       <div class="loja-name">WhatsApp</div>
-      <div class="loja-desc">(11) 96611-6078 – Atendimento direto</div>
+      <div class="loja-desc">(11) 95321-8788 – Atendimento direto</div>
     </a>
     <a href="https://labcarauto.com" target="_blank" class="loja-card loja-site">
       <div class="loja-logo">🌐</div>
@@ -741,7 +730,6 @@
   </div>
 </section>
 
-<!-- AVALIAÇÕES -->
 <div class="aval-bar" id="avaliacoes">
   <div style="max-width:1100px;margin:0 auto;">
     <h2 class="section-title" style="margin-bottom:20px;">O que nossos <span>clientes dizem</span></h2>
@@ -781,7 +769,6 @@
   </div>
 </div>
 
-<!-- CONTATO -->
 <section class="contato-section" id="contato">
   <div class="contato-inner">
     <div class="contato-info">
@@ -799,7 +786,7 @@
         <div class="info-icon">📞</div>
         <div class="info-text">
           <strong>Telefone / WhatsApp</strong>
-          <span>(11) 96611-6078</span>
+          <span>(11) 95321-8788</span>
         </div>
       </div>
       <div class="info-item">
@@ -825,13 +812,13 @@
     </div>
 
     <div class="social-btns">
-      <a href="https://wa.me/5511966116078" target="_blank" class="social-btn btn-wpp">
+      <a href="https://wa.me/5511953218788" target="_blank" class="social-btn btn-wpp">
         <div class="social-btn-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         </div>
         <div>
           <div style="font-size:15px;font-weight:700;">WhatsApp</div>
-          <div style="font-size:12px;opacity:0.85;">(11) 96611-6078 – Resposta rápida</div>
+          <div style="font-size:12px;opacity:0.85;">(11) 95321-8788 – Resposta rápida</div>
         </div>
       </a>
       <a href="https://www.instagram.com/labcar.auto" target="_blank" class="social-btn btn-ig">
@@ -850,7 +837,7 @@
           <div style="font-size:12px;opacity:0.85;">labcar_automotivos – Loja oficial</div>
         </div>
       </a>
-      <a href="https://lista.mercadolivre.com.br/_CustId_705411386" target="_blank" class="social-btn btn-ml2">
+      <a href="https://lista.mercadolivre.com.br/_CustId_705411386" target="_blank" class="btn-ml2 social-btn">
         <div class="social-btn-icon" style="font-size:22px;">🏪</div>
         <div>
           <div style="font-size:15px;font-weight:700;">Mercado Livre</div>
@@ -861,7 +848,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-top">
@@ -875,18 +861,18 @@
         <a href="https://shopee.com.br/labcar_automotivos" target="_blank">Shopee</a>
         <a href="https://lista.mercadolivre.com.br/_CustId_705411386" target="_blank">Mercado Livre</a>
         <a href="https://labcarauto.com" target="_blank">Site Oficial</a>
-        <a href="https://wa.me/5511966116078" target="_blank">WhatsApp</a>
+        <a href="https://wa.me/5511953218788" target="_blank">WhatsApp</a>
       </div>
       <div class="footer-col">
         <h4>Contato</h4>
         <p>📍 Osasco – SP, 06132-380</p>
-        <p>📞 (11) 96611-6078</p>
+        <p>📞 (11) 95321-8788</p>
         <p>✉️ labcar.auto@gmail.com</p>
         <p>🕐 Seg–Sex: 09h–18h</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Labcar Acessórios Automotivos. Todos os direitos reservados.</p>
+      <p>© 2026 Labcar Acessórios Automotivos. Todos os direitos reservados.</p>
       <p class="footer-credit">Criado por <a href="https://www.instagram.com/diego.lara1914" target="_blank">diego campos</a> · <a href="https://www.instagram.com/diego.lara1914" target="_blank">@diego.lara1914</a></p>
     </div>
   </div>
